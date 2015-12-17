@@ -4,7 +4,7 @@ package com.learning.wumpus.hunt.the.wumpus;
  * Hello world!
  *
  */
-public class App 
+public class Wumpus 
 {
     public static void main( String[] args )
     {
