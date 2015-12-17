@@ -11,4 +11,9 @@ public class WumpusMap {
 		return "I am a 2x2 grid with no characters";
 	}
 
+	public int place(WumpusBat bat, long seed) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 }
