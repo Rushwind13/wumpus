@@ -8,7 +8,7 @@ public class WumpusMap {
 
 	public String explainYourself() {
 		// TODO Auto-generated method stub
-		return null;
+		return "I am a 2x2 grid with no characters";
 	}
 
 }
