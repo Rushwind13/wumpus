@@ -5,15 +5,15 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
-public class TestWumpus {
+public class TestWumpusInitialize {
     
-	
 	private WumpusMap map;
 
 	@Before
 	public void setUp(){
 		this.map = new WumpusMap(2,2);
 	}
+	
 	@Test
 	public void testDrawMap()
     {
