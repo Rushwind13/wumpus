@@ -17,7 +17,7 @@ public class TestWumpus {
 	@Test
 	public void testDrawMap()
     {
-        assertEquals("I am a 2x2 grid with no characters", this.map.explainYourself());
+        assertEquals("I am a 2x2 grid ", this.map.explainYourself());
     }
 	
 //	double randomGenerator(long seed) {
@@ -34,6 +34,7 @@ public class TestWumpus {
 		long seed = System.currentTimeMillis();
 		WumpusBat bat = new WumpusBat();
 		int loc = this.map.place(bat, seed);
-		assertEquals("I am a 2x2 grid with a bat: " + bat + " at: " + loc, this.map.explainYourself());
+		assertEquals("I am a 2x2 grid with a " + bat, this.map.explainYourself());
+		System.out.println(this.map.explainYourself());
 	}
 }
