@@ -12,6 +12,6 @@ public class Hero
 	}
 
 	public String explainYourself() {
-        return "";
+        return "I am a hero at location: 7";
 	}
 }
