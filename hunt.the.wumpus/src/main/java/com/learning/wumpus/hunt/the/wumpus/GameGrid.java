@@ -39,15 +39,20 @@ public class GameGrid {
 		return retval.toString();
 	}
 
-	public int place(Hero bat, long seed)
+//  too early for this, but its coming
+//	public int place(Hero hero){
+//		return this.place(hero, System.currentTimeMillis());
+//	}
+
+	int place(Hero hero, long seed)
 	{
 		// figure out which room
-		// put the bat in the room
+		// put the hero in the room
 		// set the room's contents
 		int whichroom = 0;
 		Room room = rooms[whichroom];
-		room.contents = bat;
-		bat.loc = whichroom;
+		room.contents = hero;
+		hero.loc = whichroom;
 		
 		return whichroom;
 	}

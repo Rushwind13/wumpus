@@ -2,9 +2,8 @@ package com.learning.wumpus.hunt.the.wumpus;
 
 public class Hero
 {
-	public int loc;
-	
-	
+	int loc;
+
 	@Override
 	public String toString()
 	{
@@ -12,10 +11,11 @@ public class Hero
 	}
 
 	public String explainYourself() {
-        return "I am a hero at location: 7";
+        return "I am a hero at location: " + this.loc;
 	}
 
     public int move(String left) {
-        return 6;
+		this.loc -= 1;
+        return this.loc;
     }
 }
