@@ -30,7 +30,7 @@ public class TestHeroMovement {
         int loc = hero.move("Left");
         assertEquals("I am a 4x5 grid with a " + hero, grid.explainYourself());
         System.out.println(grid.explainYourself());
-        assertEquals("I am a hero at location: " + loc, hero.explainYourself());
+        assertEquals("I am a hero at location: 6", hero.explainYourself());
     }
 
     @Test
@@ -39,6 +39,6 @@ public class TestHeroMovement {
         int loc = hero.move("Right");
         assertEquals("I am a 4x5 grid with a " + hero, grid.explainYourself());
         System.out.println(grid.explainYourself());
-        assertEquals("I am a hero at location: " + loc, hero.explainYourself());
+        assertEquals("I am a hero at location: 8", hero.explainYourself());
     }
 }
