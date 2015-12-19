@@ -10,4 +10,8 @@ public class Hero
 	{
 		return this.getClass().getSimpleName() + " at loc: " + this.loc;
 	}
+
+	public String explainYourself() {
+        return "";
+	}
 }
