@@ -1,9 +1,9 @@
 package com.learning.wumpus.hunt.the.wumpus;
 
-public class WumpusRoom 
+public class Room
 {
-	public WumpusCharacter contents;
-	public WumpusRoom()
+	public Object contents;
+	public Room()
 	{
 		contents = null;
 	}

@@ -1,6 +1,6 @@
 package com.learning.wumpus.hunt.the.wumpus;
 
-public class WumpusBat implements WumpusCharacter
+public class Hero
 {
 	public int loc;
 	
@@ -8,6 +8,6 @@ public class WumpusBat implements WumpusCharacter
 	@Override
 	public String toString()
 	{
-		return "WumpusBat at loc: " + this.loc;
+		return this.getClass().getSimpleName() + " at loc: " + this.loc;
 	}
 }

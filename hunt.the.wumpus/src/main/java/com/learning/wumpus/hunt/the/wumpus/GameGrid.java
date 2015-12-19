@@ -1,19 +1,19 @@
 package com.learning.wumpus.hunt.the.wumpus;
 
-public class WumpusMap {
+public class GameGrid {
 
 	private int width;
 	private int height;
-	private WumpusRoom []rooms;
+	private Room[] rooms;
 	
-	public WumpusMap(int i, int j) 
+	public GameGrid(int i, int j)
 	{
 		this.width = i;
 		this.height = j;
-		rooms = new WumpusRoom[i*j];
+		rooms = new Room[i*j];
 		for( int k = 0; k < i*j; k++ )
 		{
-			WumpusRoom room = new WumpusRoom();
+			Room room = new Room();
 			System.out.println(room);
 			rooms[k] = room;
 			
@@ -28,7 +28,7 @@ public class WumpusMap {
 		
 		retval.append("I am a " + this.width + "x" + this.height + " grid ");
 				
-		for( WumpusRoom room: this.rooms )
+		for( Room room: this.rooms )
 		{
 			if( room.contents != null )
 			{
@@ -39,13 +39,13 @@ public class WumpusMap {
 		return retval.toString();
 	}
 
-	public int place(WumpusBat bat, long seed) 
+	public int place(Hero bat, long seed)
 	{
 		// figure out which room
 		// put the bat in the room
 		// set the room's contents
 		int whichroom = 0;
-		WumpusRoom room = rooms[whichroom];
+		Room room = rooms[whichroom];
 		room.contents = bat;
 		bat.loc = whichroom;
 		
